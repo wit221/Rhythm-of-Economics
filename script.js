@@ -348,17 +348,17 @@ function displayRhythms(){
 	for (var i=0;i<currentCountries.length;i++){
 
 		if(mode=='multiplepulses'){
-			$("#mainspace").append("</div id='box'><span style='color:blue'>" + currentCountries[i].country + "</span>")
+			$("#mainspace").append("</div id='box'><span style='color:blue'>" + currentCountries[i].country + "</span><br>")
 			$("#mainspace").append("Best-fitting rhythm: ")
-			$("#mainspace").append("<ul style='list-style-type:circle'> <li>"+ 'Pulses: '+ currentCountries[i].rhythms[0]['Pulses']+ "</li>")
+			$("#mainspace").append("<li>"+ 'Pulses: '+ currentCountries[i].rhythms[0]['Pulses']+ "</li>")
 			$("#mainspace").append("<li>" + 'Onsets: '+ currentCountries[i].rhythms[0]['Onsets']+ "</li>")
-			$("#mainspace").append("<li>" + 'Rhythm: '+ currentCountries[i].rhythms[0]['Rhythm String']+ "</li></ul>")
+			$("#mainspace").append("<li>" + 'Rhythm: '+ currentCountries[i].rhythms[0]['Rhythm String']+ "</li>")
 
 
 			$("#mainspace").append("Worst-fitting rhythm: ")
-			$("#mainspace").append("<ul style='list-style-type:circle'> <li>" + 'Pulses: '+ currentCountries[i].rhythms.slice(-1)[0]['Pulses']+ "</li>")
+			$("#mainspace").append("<li>" + 'Pulses: '+ currentCountries[i].rhythms.slice(-1)[0]['Pulses']+ "</li>")
 			$("#mainspace").append("<li>" + 'Onsets: '+ currentCountries[i].rhythms.slice(-1)[0]['Onsets']+ "</li>")
-			$("#mainspace").append("<li>" + 'Rhythm: '+ currentCountries[i].rhythms.slice(-1)[0]['Rhythm String']+ "</li></ul>")
+			$("#mainspace").append("<li>" + 'Rhythm: '+ currentCountries[i].rhythms.slice(-1)[0]['Rhythm String']+ "</li>")
 
 		}else{
 			$("#mainspace").append("<div>" + currentCountries[i].country + "</div>")
