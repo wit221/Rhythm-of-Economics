@@ -157,7 +157,7 @@ function getIndicatorData(){
 }
 
 	$.ajax({
-	  	url: "http://api.worldbank.org/en/countries/all/indicators/NY.GDP.MKTP.CD?per_page=14000&date=1960:2014&format=jsonp",
+	  	url: "https://api.worldbank.org/en/countries/all/indicators/NY.GDP.MKTP.CD?per_page=14000&date=1960:2014&format=jsonp",
 	  	type: 'GET',
 	  	dataType: 'jsonp',
 	  	jsonp: 'prefix',
