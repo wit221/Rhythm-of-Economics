@@ -6,3 +6,5 @@ The app generates the best-fitting rhythms based on the GDP values for chosen co
 
 More info on the theory underlying rhythms in music:
 http://link.springer.com/chapter/10.1007/11589440_20
+
+More info on project in the presentation within this repository.
